@@ -22,7 +22,7 @@ clo.addEventListener("click", function(){
 //모달 끝
 //슬라이드
 slidImg.forEach((img,index)=>{
-    img.style.backgroundImage=`url("../img/${imgs[index]}")`;
+    img.style.backgroundImage=`url("img/${imgs[index]}")`;
 });
 
 
