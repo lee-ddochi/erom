@@ -1,0 +1,246 @@
+*{margin: 0; padding: 0;} ul{list-style: none;} a{text-decoration: none;}
+        body{
+            width: 100vw;
+            color: rgb(7,7,7); position: absolute;
+            overflow-x: hidden;
+        }
+        /* modal start--------------------------------------------------------------------------------- */
+            .modalbox{
+                width: 100vw; height: 100%; 
+                overflow: hidden;
+                background: rgb(0,104,98);
+                background: -moz-linear-gradient(90deg, rgba(0,104,98,1) 0%, rgba(0,206,138,1) 0100%);
+                background: -webkit-linear-gradient(90deg, rgba(0,104,98,1) 0%, rgba(0,206,138,1) 0100%);
+                background: linear-gradient(90deg, rgba(0,104,98,1) 0%, rgba(0,206,138,1) 0100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#006862",endColorstr="#00ce8a",GradientType=1);
+                position: absolute; top: -100%; left: 0;
+                color: white; z-index: 50; transition: 0.3s;
+            }
+            .modalbox.on{top: 0;}
+                .modaltop{position: relative; width: 100%; height: 100px;
+
+                }
+                .logo2{color: rgb(255, 255, 255); font-size: 70px; position: absolute; left: 5%;}
+                .clo{position: absolute; right: 5%; font-size: 30px; top: 30px;}
+                .mota{ margin-top: 30vh; width: 100%; height: 250px; color: white;}
+                .mod{ width: 80%; height: 250px; margin: auto; text-align: center;}
+                .mod tr {height: 30px;}
+                .mod th{ font-size: 20px; height: 50px;}
+                .mod th, td { width: 15%;}
+            .mini {color: white; width: 90%; height: 70px;
+                margin: auto; margin-top: 30px;
+                border-top: 0.5px solid white; border-bottom: 0.5px solid white;
+                align-content: center;
+            }
+            .address{width: 90%; color: rgba(255, 255, 255, 0.726); display: flex; margin: auto; margin-top: 10px; text-align: center;}
+            .address>div:nth-child(2){
+                height: 20px;
+                border-left: 0.3px solid rgba(255, 255, 255, 0.726); border-right: 0.3px solid rgba(255, 255, 255, 0.726); 
+                margin-left: 10px; margin-right: 10px; padding-left: 10px;  padding-right: 10px;
+            }
+        /* modal end*/
+        /* header */
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.188);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .logo{
+                width: 10%;
+                height: 90px;
+                color: darkslategrey;
+                padding: 10px;
+                text-align: center;
+                font-size: 20px;
+                align-content: center;
+                position: relative;
+            }
+            .nav{
+                width: 70%;
+                height: 90px;
+                position: relative;
+                width: 100%; height: 100%; 
+                display: flex; justify-content: center; 
+                position: relative;text-align: center;
+            }
+                .menu{
+                    width: 17%;
+                    height: 100%;
+                    font-size: 15px;
+                    position: relative;
+                    align-content: center;
+                    top: -10px;
+                }
+                    .submenu{
+                        width: 100%;
+                        position: absolute;
+                        align-content: center;
+                        cursor: pointer;
+                    }
+                    .submenuBox{
+                        width: 100%;
+                        height: 0px;
+                        opacity: 0;
+                        position: relative;
+                        top: 0px;
+                        font-size: 15px;
+                        background-color: white;
+                        box-shadow: 0px 0px 2px black;
+                        border-radius: 10px;
+                        transition: 0.5s;
+                        z-index: 10;
+                    }
+                        .submenuBox>div{
+                            width: 100%; height: 10px; margin-top: 10px; align-content: center;}
+                        .submenu:hover .submenuBox{opacity: 1; height: 110px; top: 5px;}
+                            .submenuBox>div{padding-top: 10px;}
+        .icon{width: 10%; display: flex; align-items: center; position: relative;}
+            .kore{ 
+                width: 30px; height: 15px; 
+                border-radius: 5px; background-image: url(../img/xormr.png); 
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; margin-right: 20px;
+                transition: 0.5s;
+            }
+            .EanC{
+                display: none; width: 90px; height: 50px; top: 30px; left: -60px;
+                text-align: center; align-content: center; border-radius: 10px; z-index: 10;
+                background-color: rgb(217, 217, 217);  position: absolute;}
+            .kore:hover .EanC{display: block;}
+        /* header end----------------------------------------- */
+        section{
+            width: 100%; height: 700px; overflow-x: hidden;  position: relative;}
+            .slidbox{
+                width: 600%;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                transition: 0.7s;
+                left: 0;
+            }
+                .slidImg{
+                    width: 100%;
+                    height: 700px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    left: 0; top: 0;
+                    transition: 0.7s;
+                }
+                .textbox{
+                    width: 470px;
+                    height: 300px;
+                    display: flex;
+                    margin-top: 200px;
+                    margin-left: 10%;
+                }
+                    .num{
+                        text-align: left; margin-right: 10px; font-size: 20px; 
+                        font-weight: 800;
+                    }
+                        .txt>div:nth-child(1){
+                            width: 70px; height: 30px;
+                            background-color: darkslategrey;
+                            color: white; border-radius: 3px;
+                            font-size: 20px; text-align: center;
+                            align-content: center; margin-bottom: 10px;
+                        }
+                        .txtbtn{
+                            width: 130px; height: 40px;
+                            background: linear-gradient(90deg, rgba(69,62,189,1) 0%, rgba(87,80,129,1) 0%, rgba(130,130,130,1) 0%, rgba(52,132,106,1) 50%, rgba(57,57,57,1) 100%, rgba(41,84,135,1) 100%, rgba(0,212,255,1) 100%);;
+                            color: white; border-radius: 25px;
+                            font-size: 15px; text-align: center;
+                            align-content: center; margin-top: 15px;
+                        }
+                        .txtbtn:hover{background-color: rgba(255, 255, 255, 0); border: 1px solid white; cursor: pointer;}
+                    .txt h1{font-size: 25px; display: block;margin-bottom: 60px;}
+                        .txt h4{font-size: 10px;}
+        /* 방향박스 */
+            .wbox{
+                width: 300px; 
+                height: 100px; 
+                background-color: rgb(255, 255, 255); position: absolute; bottom: 0%; right: 7%; align-content: center;
+            }
+            #movbar{width: 0%; height: 1.5px; background-color: black; margin-left: 30px; transition: 0.7s;}
+            .arrow{ width: 80%; height: 30px;  margin: auto;  display: flex; justify-content: center; margin-bottom: 10px; cursor: pointer;}
+        /* section 1 end */
+        /* section 2 start */
+        section:nth-child(2){width: 100vw; position: relative; top: 0; left: 0; align-content: center;}
+        #titbox{
+            width: 100%; height: 250px; 
+            text-align: center; align-content: center; transition: 0.5s;
+            position: relative; transform: scale(0.7); opacity: 0;
+        }
+        #titbox.on {transform: scale(1); opacity: 1;}
+            .titbox>h1{font-size: 40px; font-weight: 900;}
+        .iconsB{width: 100%; height: 300px; position: relative; 
+            display: flex; justify-content: center; align-items: center;
+        }
+                .ico{
+                    background-position: center; background-repeat: no-repeat; position: relative;
+                    left: 50%; transform: translateX(-50%); top: 60px; transition: 0.3s;
+                    background-size: cover; width: 80px; height: 80px;  }
+                #iconB1{background-image: url(../img/section01_icon01.png);}
+                #iconB2{background-image: url(../img/section01_icon02.png);}
+                #iconB3{background-image: url(../img/section01_icon03.png);}
+                #iconB4{background-image: url(../img/section01_icon04.png);}
+                #iconB5{background-image: url(../img/section01_icon05.png);}
+                .icoBt{position: relative; width: 100%; text-align: center; top: 70px; color: gray; transition: 0.3s;}
+                .re{position: relative; width: 100%; text-align: center; top: 40px; opacity: 0; transition: 0.2s; display: flex; justify-content: center; font-size: 13px;}
+                    .re>div:nth-child(2){width: 20px; height: 20px; text-align: center; align-content: center; margin-left: 10px;}
+                .iconsB>div:hover .icoBt {color: darkslategray; top: 40px;}
+                .iconsB>div:hover .ico{top: 30px;}
+                .iconsB>div:hover .re{top: 45px; opacity: 1;}
+                #icl1{width: 15%; height: 100%; position: absolute; left: 5%; top: 0;transition: 1s; opacity: 0;}
+                #icl2{width: 15%; height: 100%; position: absolute; left: 25%; top: 70px;transition: 1s; opacity: 0;}
+                #icm0{width: 15%; height: 100%; position: absolute; left: 50%; transform: translateX(-50%); top: -70px;transition: 1s; opacity: 0;}
+                #icr2{width: 15%; height: 100%; position: absolute; right: 25%; top: 70px;transition: 1s; opacity: 0;}
+                #icr1{width: 15%; height: 100%; position: absolute; right: 5%; transition: 1s; opacity: 0;}
+                #icl1.on{left: 10%; opacity: 1;}
+                #icl2.on{top: 0; opacity: 1;}
+                #icm0.on{top: 0 ; opacity: 1;}
+                #icr2.on{top: 0; opacity: 1;}
+                #icr1.on{right: 10%; opacity: 1;}
+        /* section2 end ---------------------------------------------------------------------------------- */
+        /* section3 ------------------------------------------------------------------------------------------------------------------------------------- */
+
+        section:nth-child(3){position: relative; background-color: aquamarine; width: 100vw; }
+        .sec3box{width: 100%; height: 100%; display: flex; justify-content: center; position: absolute; align-items: center;}
+            .sec3box>div{opacity: 0.4; transition: 1s;}
+            .sec3txt1{width: 20%; height: 300px; margin-right: 100px;}
+                .sec3txt1>div{display: flex; align-items: center; height: 30px; margin-top: 100px;}
+                .arrt3{width: 20px; height: 20px; margin-left: 10px; text-align: center; line-height: 20px; border-radius: 50%; background-color: yellowgreen; color: white;}
+            .sec3img1{ 
+                width: 15%; height: 150px; transform: scale(0.4);
+                background-image: url(../img/sec1.png); 
+                background-position: center; background-repeat: no-repeat; background-size: 90% auto;}
+            .st3{width: 0px; height: 80%;border-left: 1px dotted rgb(65, 65, 65); position: absolute;}
+            
+            .sec3img2{ 
+                width: 15%; height: 150px; transform: scale(0.4);
+                background-image: url(../img/sec2.png); background-position: center; 
+                background-repeat: no-repeat; background-size: auto 100%;}
+            .sec3txt2{width: 20%; height: 300px; margin-left: 100px; text-align: right;}
+                .sec3txt2>div{display: flex; justify-content: right; align-items: center; height: 30px; margin-top: 100px; text-align: right;}
+                    .arr2t3{width: 20px; height: 20px; margin-left: 10px; text-align: center; line-height: 20px; border-radius: 50%; background-color: darkslategray; color: white;}
+            .sec3txt1.on{ opacity: 1; margin-right: 50px;}
+            .sec3img1.on{ opacity: 1; transform: scale(1);}
+            .sec3txt2.on{ opacity: 1; margin-left: 50px;}
+            .sec3img2.on{ opacity: 1; transform: scale(1);}
+
+        /* footer------------ */
+            footer{width: 100%; height: 300px; background-color: rgb(9, 9, 9); position: relative; color: white;}
+            .fobox{width: 75%; height: 100%; position: relative; align-content: center; left: 50%; transform: translateX(-50%);}
+            .fotxt{width: 100%; height: 40px; display: flex; position: relative;}
+                .fotxt>div{width: 15%; }
+                .fam{position: absolute; right: 0; height: 35px; bottom: 20px; text-align: center; align-content: center; border-top: 0.1px solid rgba(255, 255, 255, 0.333); border-bottom: 1px solid rgba(255, 255, 255, 0.637);}
+            .fost{width: 100%; height: 0.3px; background-color: rgba(255, 255, 255, 0.185); margin-bottom: 30px; margin-top: 10px; }
+            .foad{width: 100%; height: 50px; color: rgba(255, 255, 255, 0.562); line-height: 30px;}
